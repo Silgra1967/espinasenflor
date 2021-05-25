@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Espinas en flor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
+        <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+        <!----- icono para apple y safari --> 
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <!-- Load Require CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+            <!-- iconos  -->
+        <link href="assets/css/boxicon.min.css" rel="stylesheet">
+            <!-- tipo de letra -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;600&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> -->
+            <!-- carga CSS -->
+        <link rel="stylesheet" href="assets/css/estilos.css">
+    </head>
+
+<body>
+    <!-- Header -->
+    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light barranav shadow fixed-top">
+	
+        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+        navbar-light = texto negro de la letra
+        bg-white = fondo de color blanco
+        -->
+    
+            <div class="container d-flex justify-content-between align-items-center">
+            
+                <a class="navbar-brand h1" href="index.html">
+                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
+                <img src="assets\img\logo.ico" width="40px" height="40px" alt="Logo empresarial, cactus en flor">
+                    <!-- <i class='bx bxs-florist bx-sm text-success'></i> -->
+                    <!--	bx bx-buildings = icono del logo de la web: 
+                    http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
+                    https://boxicons.com/
+                    -->
+    
+               <span class="text-dark h4">Espinas </span>
+               <span class="text-success h4">en </span>
+               <span class="text-dark h4">Flor</span></a>
+                
+                <!--	boton de hamburguesa --> 
+                    <button class="navbar-toggler border-0" 
+                    type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbar-toggler-success" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                    </span>
+                </button>
+            <!------------------------------------------- Opciones del Menu		-->
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
+            id="navbar-toggler-success">
+            
+            <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+            por un punto de interrupción principal.
+            flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
+            d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
+            directos en elementos flexibles
+            -->
+                            <div class="flex-fill mx-xl-5 mb-2">
+                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+                            <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
+                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+                           (incluida la compatibilidad con menús desplegables).-->
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-success rounded-pill px-3" href="index.html">Home</a>
+                            <!-- px = padding y mx es el margin 
+                            rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-success rounded-pill px-3" href="about.html">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-success rounded-pill px-3" href="work.html">Trabajos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-success rounded-pill px-3" href="pricing.html">Precios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn-outline-success rounded-pill px-3" href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+    <!---------------------------------------------------------Fin de las opciones del menu
+    ------------------------------------------------------------ Inicio de los iconos del menu-->
+                    <div class="navbar align-self-center d-flex">
+                        <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-success'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-success'></i></a>
+                        <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-success'></i></a>
+                        <!--	https://iconify.design/icon-sets/bx/-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    <!-- Close Header -->
+
+
+    <!-- Start pricing -->
+    <div class="container-lg py-5">
+        <div class="col-md-12 m-auto text-center py-5">
+            <h1 class="pricing-header h2 semi-bold-600">Costos de nuestros productos y servicios</h1>
+            <p class="pricing-footer">
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut facilisis.
+            </p>
+        </div>
+
+
+        <div class="row px-lg-3">
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card h-100 shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body rounded-pill text-center align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bxs-florist text-success"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Servicios Gratuitos</h2>
+                        <p>$0</p>
+                        <ul class="pricing-table-body text-start text-dark px-4 list-unstyled regular-300">
+                            <li><i class="bx bxs-circle me-2"></i>Presupuestos</li>
+                            <li><i class="bx bxs-circle me-2"></i>Asesoramientos</li>
+                            <li><i class="bx bxs-circle me-2"></i>Visitas guiadas</li>
+                            <li><i class="bx bxs-circle me-2"></i>Soporte por Email</li>
+                        </ul>
+                        <div class="pricing-table-footer pt-5">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-primary light-300">Registrarse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pt-sm-0 pt-3 px-xl-3">
+                <div class="pricing-table card bg-success h-100 card-rounded shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body text-center text-white align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bxs-florist text-white py-3"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">WorkShop</h2>
+                        <p>$2500,00</p>
+                        <ul class="pricing-table-list text-start text-dark px-4 list-unstyled regular-300">
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>Cultivos Suculentas</li>
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>Diseña tu jardín</li>
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>Terrarios</li>
+                            <li class="text-white"><i class="bx bxs-circle me-2"></i>Siembra tus suculentas</li>
+                        </ul>
+                        <div class="pricing-table-footer pt-5 pb-2">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-light light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 pb-5 pt-sm-0 mt-5 px-xl-3">
+                <div class="pricing-table card h-100 shadow-sm border-0 py-5">
+                    <div class="pricing-table-body card-body text-center align-self-center p-md-0">
+                        <i class="pricing-table-icon display-3 bx bxs-florist text-success"></i>
+                        <h2 class="pricing-table-heading h5 semi-bold-600">Paisajismo</h2>
+                        <p>A presupuestar</p>
+                        <ul class="pricing-table-list text-start text-dark px-4 list-unstyled regular-300">
+                            <li><i class="bx bxs-circle me-2"></i>Terrazas</li>
+                            <li><i class="bx bxs-circle me-2"></i>Jardín</li>
+                            <li><i class="bx bxs-circle me-2"></i>Terrazas verdes</li>
+                            <li><i class="bx bxs-circle me-2"></i>Jardín Vertical</li>
+                            <li><i class="bx bxs-circle me-2"></i>Ambientaciones para fiestas</li>
+                        </ul>
+                        <div class="pricing-table-footer pt-1">
+                            <a href="#" class="btn rounded-pill px-4 btn-outline-primary light-300">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <footer class="fondofooter pt-4">
+        <div class="container">
+            <div class="row py-4">
+
+                <div class="col-lg-3 col-12 align-left">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets\img\logo.ico" width="50px" height="50px" alt="Logo empresarial, cactus en flor">
+                        <!-- <i class='bx bxs-florist bx-sm text-light'></i> -->
+                        <span class="text-light h5">Espinas </span><span class="text-light h5 semi-bold-600">en Flor</span>
+                    </a>
+                    <p class="text-light my-lg-4 my-2">
+                        Único jardín de suculentas de Argentina que cumple tus expectativas.
+                    </p>
+                    <ul class="list-inline footer-icons light-300">
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="http://facebook.com/">
+                                <i class='bx bxl-facebook bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0"> 
+                            <a class="text-light" target="_blank" href="https://www.instagram.com/">
+                                <i class='bx bxl-instagram bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.whatsapp.com/">
+                                <i class='bx bxl-whatsapp bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0">
+                            <a class="text-light" target="_blank" href="https://www.pinterest.com/">
+                                <i class='bx bxl-pinterest bx-md'></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item m-0"> 
+                            <a class="text-light" target="_blank" href="https://www.telegram.com/">
+                                <i class='bx bxl-telegram bx-md' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h3 class="h4 pb-lg-3 text-light light-300">Nuestro Jardín</h2>
+                        <ul class="list-unstyled text-light light-300">
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light" 
+								href="index.html">Home</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="about.html">Nosotros</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="work.html">Trabajos</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i></i><a class="text-decoration-none text-light py-1" 
+								href="pricing.html">Precios</a>
+                            </li>
+                            <li class="pb-2">
+                                <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+								href="contact.html">Contáctanos</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Nuestros Servicios</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Ventas</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">Cursos</a>
+                        </li>
+                        <li class="pb-2">
+                            <i class='bx-fw bx bxs-chevron-right bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="#">WorkShop</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 my-sm-0 mt-4">
+                    <h2 class="h4 pb-lg-3 text-light light-300">Atendemos en:</h2>
+                    <ul class="list-unstyled text-light light-300">
+                        <li class="pb-2">
+                            <i class='bx-fw bx bx-phone bx-xs'></i><a class="text-decoration-none text-light py-1" 
+							href="tel:010-020-0340">021-2354-4568</a>
+                        </li>
+                        <li class="pb-2"> 
+                            <i class='bx-fw bx bx-mail-send bx-xs'></i><a class="text-decoration-none text-light py-1"
+							href="mailto:info@company.com">flordeespinas@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w-100 bg-dark py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-start text-center text-light light-300">
+                            © Copyright 2021 Flor de Espinas. Todos los derechos reservados.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <p class="text-lg-end text-center text-light light-300">
+                            Diseñado por <a rel="sponsored" class="text-decoration-none text-light" 
+							href="https://cursophp.com.ar/" target="_blank"><strong>Silgra #2104</strong></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
