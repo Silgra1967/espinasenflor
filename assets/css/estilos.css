@@ -222,6 +222,8 @@ a {
 .pricing-table {
   max-width: 350px;
   margin: auto;
+  background-position: center center;
+  background-size: cover;
 }
 .pricing-table,
 .pricing-horizontal {
