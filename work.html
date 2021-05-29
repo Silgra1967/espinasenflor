@@ -1,251 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Espinas en flor</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">  
-        <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom --> 
-        <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-        <!----- icono para apple y safari --> 
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-        <!-- Load Require CSS -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-            <!-- iconos  -->
-        <link href="assets/css/boxicon.min.css" rel="stylesheet">
-            <!-- tipo de letra -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;600&display=swap" rel="stylesheet">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> -->
-            <!-- carga CSS -->
-        <link rel="stylesheet" href="assets/css/estilos.css">
-    </head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!----- viewport para apple device-width = ancho pantalla initial-scale es que inicia sin ningún zoom -->
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png" />
+    <!----- icono para apple y safari -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+    <!-- Load Require CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- iconos  -->
+    <link href="assets/css/boxicon.min.css" rel="stylesheet" />
+    <!-- tipo de letra -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> -->
+    <!-- carga CSS -->
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
-    <nav id="main_nav" class="navbar navbar-expand-lg navbar-light barranav shadow fixed-top">
-	
-        <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
+    <nav
+      id="main_nav"
+      class="navbar navbar-expand-lg navbar-light barranav shadow fixed-top"
+    >
+      <!--navbar-expand-lg = envoltorio para que el navbar se estire en lg
         navbar-light = texto negro de la letra
         bg-white = fondo de color blanco
         -->
-    
-            <div class="container d-flex justify-content-between align-items-center">
-            
-                <a class="navbar-brand h1" href="index.html">
-                <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->	
-                <img src="assets\img\logo.ico" width="40px" height="40px" alt="Logo empresarial, cactus en flor">
-                    <!-- <i class='bx bxs-florist bx-sm text-success'></i> -->
-                    <!--	bx bx-buildings = icono del logo de la web: 
+
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand h1" href="index.html">
+          <!--navbar-brand = clase se utiliza para resaltar la marca o logotipo de su página-->
+          <img
+            src="assets\img\logo.ico"
+            width="40px"
+            height="40px"
+            alt="Logo empresarial, cactus en flor"
+          />
+          <!-- <i class='bx bxs-florist bx-sm text-success'></i> -->
+          <!--	bx bx-buildings = icono del logo de la web: 
                     http://www.unisvg.com/icon-sets/bx/bx-buildings.html 
                     https://boxicons.com/
                     -->
-    
-               <span class="text-dark h4">Espinas </span>
-               <span class="text-success h4">en </span>
-               <span class="text-dark h4">Flor</span></a>
-                
-                <!--	boton de hamburguesa --> 
-                    <button class="navbar-toggler border-0" 
-                    type="button" data-bs-toggle="collapse" 
-                    data-bs-target="#navbar-toggler-success" 
-                    aria-controls="navbarSupportedContent" 
-                    aria-expanded="false" 
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon">
-                    </span>
-                </button>
-            <!------------------------------------------- Opciones del Menu		-->
-            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" 
-            id="navbar-toggler-success">
-            
-            <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
+
+          <span class="text-dark h4">Espinas </span>
+          <span class="text-success h4">en </span>
+          <span class="text-dark h4">Flor</span></a
+        >
+
+        <!--	boton de hamburguesa -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler-success"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <!------------------------------------------- Opciones del Menu		-->
+        <div
+          class="
+            align-self-center
+            collapse
+            navbar-collapse
+            flex-fill
+            d-lg-flex
+            justify-content-lg-between
+          "
+          id="navbar-toggler-success"
+        >
+          <!-------collapse navbar-collapse= para agrupar y ocultar el contenido de la barra de navegación 
             por un punto de interrupción principal.
             flex-fill = obliga a que todos los elementos tengan el mismo tamaño de ancho
             d-lg-flex = utilidades para crear un contenedor flexbox y transforme los elementos secundarios 
             directos en elementos flexibles
             -->
-                            <div class="flex-fill mx-xl-5 mb-2">
-                    <!--	  mx=para clases que establecen tanto *-lefty*-right-->
-                            <ul class="nav navbar-nav d-flex justify-content-between mx-xl-5 text-center text-dark">
-                        <!--   .navbar-nav para una navegación ligera y de altura completa 
+          <div class="flex-fill mx-xl-5 mb-2">
+            <!--	  mx=para clases que establecen tanto *-lefty*-right-->
+            <ul
+              class="
+                nav
+                navbar-nav
+                d-flex
+                justify-content-between
+                mx-xl-5
+                text-center text-dark
+              "
+            >
+              <!--   .navbar-nav para una navegación ligera y de altura completa 
                            (incluida la compatibilidad con menús desplegables).-->
-                            <li class="nav-item">
-                                <a class="nav-link btn-outline-success rounded-pill px-3" href="index.html">Home</a>
-                            <!-- px = padding y mx es el margin 
-                            rounded-pill =genera ese boton con bordes redondeados rounded-circle-->	
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn-outline-success rounded-pill px-3" href="about.html">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn-outline-success rounded-pill px-3" href="work.html">Trabajos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn-outline-success rounded-pill px-3" href="pricing.html">Precios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn-outline-success rounded-pill px-3" href="contact.html">Contáctanos</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-    <!---------------------------------------------------------Fin de las opciones del menu
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-outline-success rounded-pill px-3"
+                  href="index.html"
+                  >Home</a
+                >
+                <!-- px = padding y mx es el margin 
+                            rounded-pill =genera ese boton con bordes redondeados rounded-circle-->
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-outline-success rounded-pill px-3"
+                  href="about.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-outline-success rounded-pill px-3"
+                  href="work.html"
+                  >Trabajos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-outline-success rounded-pill px-3"
+                  href="pricing.html"
+                  >Precios</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link btn-outline-success rounded-pill px-3"
+                  href="contact.html"
+                  >Contáctanos</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!---------------------------------------------------------Fin de las opciones del menu
     ------------------------------------------------------------ Inicio de los iconos del menu-->
-                    <div class="navbar align-self-center d-flex">
-                        <a class="nav-link" href="#"><i class='bx bx-bell bx-sm bx-tada-hover text-success'></i></a>
-                        <a class="nav-link" href="#"><i class='bx bx-cog bx-sm text-success'></i></a>
-                        <a class="nav-link" href="#"><i class='bx bx-user-circle bx-sm text-success'></i></a>
-                        <!--	https://iconify.design/icon-sets/bx/-->
-                    </div>
-                </div>
-            </div>
-        </nav> 
+          <div class="navbar align-self-center d-flex">
+            <a class="nav-link" href="#"
+              ><i class="bx bx-bell bx-sm bx-tada-hover text-success"></i
+            ></a>
+            <a class="nav-link" href="#"
+              ><i class="bx bx-cog bx-sm text-success"></i
+            ></a>
+            <a class="nav-link" href="#"
+              ><i class="bx bx-user-circle bx-sm text-success"></i
+            ></a>
+            <!--	https://iconify.design/icon-sets/bx/-->
+          </div>
+        </div>
+      </div>
+    </nav>
     <!-- Close Header -->
 
-
     <!-- Start Banner Hero -->
-    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5 mt-5">
-        <div class="banner-vertical-center-work container text-dark d-flex justify-content-center align-items-center py-5 p-0">
-            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
-                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Nuestro Trabajo</h1>
-                <h3 class="h4 pb-2 bold-400">Podemos crear el espacio que soñaste</h3>
-                <!-- <p class="banner-body pb-2 bold-300">
-                    Vector illustration <a class="text-dark" href="http://freepik.com/" target="_blank">Freepik</a>.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus.
-                </p> -->
-               <a href="contact.html"><button type="submit" class="btn rounded-pill btn-outline-dark btn-lg px-4">Consultas</button></a>
-             <a href="about.html"><button type="submit" class="btn rounded-pill btn-outline-dark btn-lg px-4">Quienes Somos</button></a>
-            </div>
+    <div id="work_banner" class="banner-wrapper bg-light w-100 py-5">
+      <div
+        class="
+          banner-vertical-center-work
+          container
+          text-dark
+          d-flex
+          justify-content-center
+          align-items-center
+          py-5
+          p-0
+        "
+      >
+        <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+          <h1
+            class="
+              banner-heading
+              h2
+              display-3
+              pb-5
+              semi-bold-600
+              typo-space-line-center
+            "
+          >
+            Nuestro Trabajo
+          </h1>
+          <h3 class="h4 pb-2 bold-400">
+            Podemos crear el espacio que soñaste
+          </h3>
+          <!-- <p class="banner-body pb-2 light-300">
+            Vector illustration
+            <a class="text-white" href="http://freepik.com/" target="_blank"
+              >Freepik</a
+            >. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus.
+          </p> -->
+          <a href="contact.html"
+            ><button
+              type="submit"
+              class="btn rounded-pill btn-outline-dark px-4 me-4"
+            >
+              Consultas
+            </button></a
+          >
+          <a href="about.html"
+            ><button
+              type="submit"
+              class="btn rounded-pill btn-outline-dark px-4"
+            >
+              Quienes Somos
+            </button></a
+          >
         </div>
+      </div>
     </div>
     <!-- End Banner Hero -->
 
-    <!-- Start Our Work -->
-    <div class="row justify-content-center my-5 fondolineas py-3 ">
-        <div class="filter-btns shadow-md rounded-pill text-center col-auto">
-            <a class="filter-btn btn rounded-pill btn-outline-success border-0 m-md-2 px-md-4 text-light active" data-filter=".project" href="#">Todos</a>
-            <a class="filter-btn btn rounded-pill btn-outline-success border-0 m-md-2 px-md-4 text-light" data-filter=".business" href="#">Ventas</a>
-            <a class="filter-btn btn rounded-pill btn-outline-success border-0 m-md-2 px-md-4 text-light" data-filter=".marketing" href="#">WorkShops</a>
-            <a class="filter-btn btn rounded-pill btn-outline-success border-0 m-md-2 px-md-4 text-light" data-filter=".social" href="#">Paisajismo</a>
-            <a class="filter-btn btn rounded-pill btn-outline-success border-0 m-md-2 px-md-4 text-light" data-filter=".graphic" href="#">Cursos</a>
-        </div>
-    </div>
+    <!-- Start Our Work Original-->
     <section class="container py-5">
-    <div class="row projects gx-lg-5">
-            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project marketing social business">
-                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
-                    <img class="card-img-top" src="./assets/img/our-work-01.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title bold-300 text-dark">Ventas</h5>
-                        <p class="card-text regular-300 text-dark">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolor.
-                        </p>
-                        <span class="text-decoration-none text-dark regular-300">
-                              Leer más <i class='bx bxs-hand-right ms-1 text-dark'></i>
-                          </span>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project graphic social">
-                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                    <img class="card-img-top" src="./assets/img/our-work-02.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title bold-300 text-dark">WorkShop</h5>
-                        <p class="card-text regular-300 text-dark">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <span class="text-decoration-none text-dark regular-300">
-                              Leer más <i class='bx bxs-hand-right ms-1 text-dark'></i>
-                          </span>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project marketing graphic business">
-                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                    <img class="card-img-top" src="./assets/img/our-work-03.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title bold-300 text-dark">Cursos</h5>
-                        <p class="card-text regular-300 text-dark">
-                            Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse cillum dolore eu fugiatdolore eu fugiat nulla pariatur.
-                        </p>
-                        <span class="text-decoration-none text-dark regular-300">
-                              Leer más <i class='bx bxs-hand-right ms-1 text-dark'></i>
-                          </span>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="col-sm-6 col-lg-4 text-decoration-none project social business">
-                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                    <img class="card-img-top" src="./assets/img/our-work-04.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title bold-300 text-dark">Paisajismo</h5>
-                        <p class="card-text regular-300 text-dark">
-                            Excepteur sint occaecat cupidatat non proident, sunt in
-                            culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <span class="text-decoration-none text-dark regular-300">
-                              Leer más <i class='bx bxs-hand-right ms-1 text-dark'></i>
-                          </span>
-                    </div>
-                </div>
-            </a>
-            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project marketing">
-                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                    <img class="card-img-top" src="./assets/img/our-work-05.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title bold-300 text-dark">Asesoramiento</h5>
-                        <p class="card-text regular-300 text-dark">
-                            Excepteur sint occaecat cupidatat non proident,
-                            sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <span class="text-decoration-none text-dark regular-300">
-                              Leer más <i class='bx bxs-hand-right ms-1 text-dark'></i>
-                          </span>
-                    </div>
-                </div>
-            </a>
-            <a href="" class="col-sm-6 col-lg-4 text-decoration-none project marketing graphic">
-                <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
-                    <img class="card-img-top" src="./assets/img/our-work-06.jpg" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title bold-300 text-dark">Tips</h5>
-                        <p class="card-text regular-300 text-dark">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <span class="text-decoration-none text-dark regular-300">
-                              Leer más <i class='bx bxs-hand-right ms-1 text-dark'></i>
-                          </span>
-                    </div>
-                </div>
-            </a>
+      <div class="row justify-content-center my-5">
+        <div class="filter-btns shadow-md rounded-pill text-center col-auto">
+          <a
+            class="
+              filter-btn
+              btn
+              rounded-pill
+              btn-outline-success
+              border-0
+              m-md-2
+              px-md-4
+              active
+            "
+            data-filter=".project"
+            href="#"
+            >Todos</a
+          >
+          <a
+            class="
+              filter-btn
+              btn
+              rounded-pill
+              btn-outline-success
+              border-0
+              m-md-2
+              px-md-4
+            "
+            data-filter=".business"
+            href="#"
+            >Ventas</a
+          >
+          <a
+            class="
+              filter-btn
+              btn
+              rounded-pill
+              btn-outline-success
+              border-0
+              m-md-2
+              px-md-4
+            "
+            data-filter=".marketing"
+            href="#"
+            >WorkShops</a
+          >
+          <a
+            class="
+              filter-btn
+              btn
+              rounded-pill
+              btn-outline-success
+              border-0
+              m-md-2
+              px-md-4
+            "
+            data-filter=".social"
+            href="#"
+            >Paisajismo</a
+          >
+          <a
+            class="
+              filter-btn
+              btn
+              rounded-pill
+              btn-outline-success
+              border-0
+              m-md-2
+              px-md-4
+            "
+            data-filter=".graphic"
+            href="#"
+            >Cursos</a
+          >
         </div>
-        <div class="row">
-            <div class="btn-toolbar justify-content-center pb-4" role="toolbar" aria-label="Toolbar with button groups">
-                <div class="btn-group me-2" role="group" aria-label="First group">
-                    <button type="button" class="btn btn-success text-white">Ant.</button>
-                </div>
-                <div class="btn-group me-2" role="group" aria-label="Second group">
-                    <button type="button" class="btn btn-success text-white">1</button>
-                </div>
-                <div class="btn-group me-2" role="group" aria-label="Second group">
-                    <button type="button" class="btn btn-success text-white">2</button>
-                </div>
-                <div class="btn-group" role="group" aria-label="Third group">
-                    <button type="button" class="btn btn-success text-white">Sig.</button>
-                </div>
+      </div>
+      <div class="row projects gx-lg-5">
+        <a
+          href="#"
+          class="
+            col-sm-6 col-lg-4
+            text-decoration-none
+            project
+            marketing
+            social
+            business
+          "
+        >
+          <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+            <img
+              class="card-img-top"
+              src="./assets/img/our-work-01.jpg"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title bold-300 text-dark">Ventas</h5>
+              <p class="card-text regular-300 text-dark">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolor.
+              </p>
+              <span class="text-decoration-none text-dark regular-300">
+                Leer más <i class="bx bxs-hand-right ms-1 text-dark"></i>
+              </span>
             </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="col-sm-6 col-lg-4 text-decoration-none project graphic social"
+        >
+          <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+            <img
+              class="card-img-top"
+              src="./assets/img/our-work-02.jpg"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title bold-300 text-dark">WorkShop</h5>
+              <p class="card-text regular-300 text-dark">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <span class="text-decoration-none text-dark regular-300">
+                Leer más <i class="bx bxs-hand-right ms-1 text-dark"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="
+            col-sm-6 col-lg-4
+            text-decoration-none
+            project
+            marketing
+            graphic
+            business
+          "
+        >
+          <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+            <img
+              class="card-img-top"
+              src="./assets/img/our-work-03.jpg"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title bold-300 text-dark">Cursos</h5>
+              <p class="card-text regular-300 text-dark">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiatdolore eu fugiat nulla pariatur.
+              </p>
+              <span class="text-decoration-none text-dark regular-300">
+                Leer más <i class="bx bxs-hand-right ms-1 text-dark"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="col-sm-6 col-lg-4 text-decoration-none project social business"
+        >
+          <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+            <img
+              class="card-img-top"
+              src="./assets/img/our-work-04.jpg"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title bold-300 text-dark">Paisajismo</h5>
+              <p class="card-text regular-300 text-dark">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </p>
+              <span class="text-decoration-none text-dark regular-300">
+                Leer más <i class="bx bxs-hand-right ms-1 text-dark"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+        <a
+          href=""
+          class="col-sm-6 col-lg-4 text-decoration-none project marketing"
+        >
+          <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+            <img
+              class="card-img-top"
+              src="./assets/img/our-work-05.jpg"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title bold-300 text-dark">Asesoramiento</h5>
+              <p class="card-text regular-300 text-dark">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </p>
+              <span class="text-decoration-none text-dark regular-300">
+                Leer más <i class="bx bxs-hand-right ms-1 text-dark"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+        <a
+          href=""
+          class="
+            col-sm-6 col-lg-4
+            text-decoration-none
+            project
+            marketing
+            graphic
+          "
+        >
+          <div class="service-work overflow-hidden card mx-5 mx-sm-0 mb-5">
+            <img
+              class="card-img-top"
+              src="./assets/img/our-work-06.jpg"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title bold-300 text-dark">Tips</h5>
+              <p class="card-text regular-300 text-dark">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <span class="text-decoration-none text-dark regular-300">
+                Leer más <i class="bx bxs-hand-right ms-1 text-dark"></i>
+              </span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="row">
+        <div
+          class="btn-toolbar justify-content-center pb-4"
+          role="toolbar"
+          aria-label="Toolbar with button groups"
+        >
+          <div class="btn-group me-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-success text-white">
+              Ant.
+            </button>
+          </div>
+          <div class="btn-group me-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-success text-white">1</button>
+          </div>
+          <div class="btn-group me-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-success text-white">2</button>
+          </div>
+          <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-success text-white">
+              Sig.
+            </button>
+          </div>
         </div>
+      </div>
     </section>
     <!-- End Our Work -->
-
     <!-- Start Feature Work -->
     <section class="bg-light py-5">
         <div class="feature-work container my-4">
@@ -450,3 +682,6 @@
 </body>
 
 </html>
+
+
+
